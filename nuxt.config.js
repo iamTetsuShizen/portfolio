@@ -1,5 +1,5 @@
 export default {
-    css: [
-      '~/assets/scss/main.scss'
-    ]
-  }
+  css: [
+    '~/assets/scss/main.scss'
+  ]
+}

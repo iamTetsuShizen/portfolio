@@ -1,0 +1,9 @@
+.menu {
+    display: flex;
+    
+    &__list {
+        display: flex;
+        
+        list-style: none;
+    }
+}
