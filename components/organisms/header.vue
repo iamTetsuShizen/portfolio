@@ -1,13 +1,13 @@
 <template>
     <header class="header">
-        <div class="logo">
+        <div class="header__logo">
             <picture>
                 <img >
             </picture>
         </div>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item"  v-for="menuItem in menu" :key="menuItem.key">
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item"  v-for="menuItem in menu" :key="menuItem.key">
                     <NuxtLink :to="{ path: menuItem.url }"> {{ menuItem.name }}</NuxtLink>
                 </li>
             </ul>
@@ -18,7 +18,6 @@
 <script>
 import menuUrls from '../../config/menu.json';
 
-
 export default {
     data() {
         return {
@@ -27,9 +26,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-    .test {
-        background-color: red;
-    }
-</style>
